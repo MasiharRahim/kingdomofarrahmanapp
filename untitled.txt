@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kingdom of Ar-Rahman</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body { background: #0a0a0a; color: #e5e5e5; }
+    .glass { background: rgba(23, 23, 23, 0.6); backdrop-filter: blur(10px); }
+    .btn-primary { transition: all 0.2s; }
+    .btn-primary:active { transform: scale(0.95); }
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+    .nav-tab.active { color: #10b981; }
+  </style>
+</head>
+<body class="font-sans pb-24">
+
+  <!-- Header -->
+  <header class="glass sticky top-0 z-40 p-4 border-b border-gray-800">
+    <h1 class="text-2xl font-bold text-center">Kingdom of <span class="text-emerald-500">Ar-Rahman</span></h1>
+  </header>
+
+  <!-- Main Content -->
+  <main class="p-4 max-w-2xl mx-auto">
+
+    <!-- Fajr Tab -->
+    <section id="tab-fajr" class="tab-content active">
+      <div class="mb-6">
+        <h2 class="text-2xl font-bold mb-1">☀️ Fajr Protocol</h2>
+        <p class="text-sm text-gray-400">The 3% wake before the world. Lead yourself first.</p>
+      </div>
+      <div class="glass rounded-3xl p-6 border border-gray-800">
+        <p class="text-gray-300">Set your Fajr time and build discipline. No excuses.</p>
+      </div>
+    </section>
+
+    <!-- Solar Tab -->
+    <section id="tab-solar" class="tab-content hidden">
+      <div class="mb-6">
+        <h2 class="text-2xl font-bold mb-1">⚡ Solar Charging</h2>
+        <p class="text-sm text-gray-400">Energy in. Excuses out. Power your day.</p>
+      </div>
+      <div class="glass rounded-3xl p-6 border border-gray-800">
+        <p class="text-gray-300">Track your energy levels and solar input.</p>
+      </div>
+    </section>
+
+    <!-- Ledger Tab -->
+    <section id="tab-ledger" class="tab-content hidden">
+      <div class="mb-6">
+        <h2 class="text-2xl font-bold mb-1">📖 Ledger</h2>
+        <p class="text-sm text-gray-400">Record your wins. Audit your losses.</p>
+      </div>
+      <div class="glass rounded-3xl p-6 border border-gray-800">
+        <p class="text-gray-300">Your daily discipline ledger lives here.</p>
+      </div>
+    </section>
+
+    <!-- Scrolls Tab -->
+    <section id="tab-scrolls" class="tab-content hidden">
+      <div class="mb-6">
+        <h2 class="text-2xl font-bold mb-1">📜 Scrolls Feed</h2>
+        <p class="text

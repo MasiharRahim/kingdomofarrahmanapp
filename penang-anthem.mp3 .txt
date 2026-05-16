@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kingdom of Ar-Rahman</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body { background: #0a0a0a; color: #e5e5e5; }
+    .glass { background: rgba(23, 23, 23, 0.6); backdrop-filter: blur(10px); }
+    .btn-primary { transition: all 0.2s; }
+    .btn-primary:active { transform: scale(0.95); }
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+    .nav-tab.active { color: #10b981; }
+  </style>
+</head>
+<body class="font-sans pb-24">
+  <header class="glass sticky top-0 z-40 p-4 border-b border-gray-800">
+    <h1 class="text-2xl font-bold text-center">Kingdom of <span class="text-emerald-500">Ar-Rahman</span></h1>
+    <p class="text-xs text-center text-gray-400">No sects. No footnotes. Just Truth.</p>
+  </header>
+  <main class="p-4 max-w-2xl mx-auto">
+    <section id="tab-fajr" class="tab-content active">
+      <div class="mb-6">
+        <h2 class="text-2xl font-bold mb-1">☀️ Fajr Protocol</h2>
+        <p class="text-sm text-gray-400">The 3% wake before the world.</p>
+      </div>
+      <div class="glass rounded-3xl p-6 border border-gray-800">
+        <p class="text-gray-300">Set your Fajr time and build discipline.</p>
+      </div>
+    </section>
+    <section id="tab-solar" class="tab-content hidden">
+      <div class="mb-6">
+        <h2 class="text-2xl font-bold mb-1">⚡ Solar Charging</h2>
+        <p class="text-sm text-gray-400">Energy in. Excuses out.</p>
+      </div>
+      <div class="glass rounded-3xl p-6 border border-gray-800">
+        <p class="text-gray-300">Track your energy levels.</p>
+      </div>
+    </section>
+    <section id="tab-ledger" class="tab-content hidden">
+      <div class="mb-6">
+        <h2 class="text-2xl font-bold mb-1">📖 Ledger</h2>
+        <p class="text-sm text-gray-400">Record your wins. Audit your losses.</p>
+      </div>
+      <div class="glass rounded-3xl p-6 border border-gray-800">
+        <p class="text-gray-300">Your daily discipline ledger lives here.</p>
+      </div>
+    </section>
+    <section id="tab-scrolls" class="tab-content hidden">
+      <div class="mb-6">
+        <h2 class="text-2xl font-bold mb-1">📜 Scrolls Feed</h2>
+        <p class="text-sm text-gray-400">Daily wisdom for the 3%.</p>
+      </div>
+      <div class="glass rounded-3xl p-6 border border-gray-800">
+        <p class="text-gray-300">Ancient scrolls and modern execution.</p>
+      </div>
+    </section>
+    <section id="tab-armory" class="tab-content hidden">
+      <div class="mb-6">
+        <h2 class="text-2xl font-bold mb-1">🛡️ Armory</h2>
+        <p class="text-sm text-gray-400">Tools of war for the modern believer.</p>
+      </div>
+      <div class="glass rounded-3xl p-6 border border-gray-800">
+        <p class="text-gray-300">Equip yourself. Digital tools and resources.</p>
+      </div>
+    </section>
+    <section id="tab-pesta" class="tab-content hidden">
+      <div class="mb-6">
+        <h2 class="text-2xl font-bold mb-1">🎵 Anthem of Penang</h2>
+        <p class="text-sm text-gray-400">The 3% Pesta Anthem</p>
+      </div>
+      <div class="glass rounded-3xl p-6 border border-emerald-500/30">
+        <h3 class="text-xl font-bold mb-2">Pulau Pinang Satu Destinasi</h3>
+        <audio id="anthemPlayer" controls class="w-full mt-4 rounded-lg">
+          <source src="penang-anthem.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <button onclick="alert('PESTAAAA!!! 🔥 AHOO UNTUK PENANG!')" class="btn-primary w-full py-3 mt-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 font-bold">
+          AHOO UNTUK PENANG! 🔥
+        </button>
+      </div>
+    </section>
+  </main>
+  <nav class="fixed bottom-0 left-0 right-0 z-50 glass border-t border-gray-800">
+    <div class="flex justify-around items-center max-w-2xl mx-auto py-3">
+      <button data-tab="fajr" class="nav-tab active text-emerald-400">
+        <i data-lucide="sunrise" class="w-5 h-5 mx-auto"></i>
+        <span class="text-xs font-medium">Fajr</span>
+      </button>
+      <button data-tab="solar" class="nav-tab text-gray-400 hover:text-emerald-400">
+        <i data-lucide="zap" class="w-5 h-5 mx-auto"></i>
+        <span class="text-xs font-medium">Solar</span>
+      </button>
+      <button data-tab="ledger" class="nav-tab text-gray-400 hover:text-emerald-400">
+        <i data-lucide="book" class="w-5 h-5 mx-auto"></i>
+        <span class="text-xs font-medium">Ledger</span>
+      </button>
+      <button data-tab="scrolls" class="nav-tab text-gray-400 hover:text-emerald-400">
+        <i data-lucide="scroll-text" class="w-5 h-5 mx-auto"></i>
+        <span class="text-xs font-medium">Scrolls</span>
+      </button>
+      <button data-tab="armory" class="nav-tab text-gray-400 hover:text-emerald-400">
+        <i data-lucide="shield" class="w-5 h-5 mx-auto"></i>
+        <span class="text-xs font-medium">Armory</span>
+      </button>
+      <button data-tab="pesta" class="nav-tab text-gray-400 hover:text-emerald-400">
+        <i data-lucide="music" class="w-5 h-5 mx-auto"></i>
+        <span class="text-xs font-medium">Pesta</span>
+      </button>
+    </div>
+  </nav>
+  <script>
+    const tabs = document.querySelectorAll('.nav-tab');
+    const contents = document.querySelectorAll('.tab-content');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const target = tab.getAttribute('data-tab');
+        tabs.forEach(t => {
+          t.classList.remove('active', 'text-emerald-400');
+          t.classList.add('text-gray-400');
+        });
+        tab.classList.add('active', 'text-emerald-400');
+        tab.classList.remove('text-gray-400');
+        contents.forEach(c => c.classList.add('hidden'));
+        document.getElementById(`tab-${target}`).classList.remove('hidden');
+      });
+    });
+    lucide.createIcons();
+  </script>
+</body>
+</html>
