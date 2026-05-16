@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kingdom of Ar-Rahman</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0a0a0a;color:#fff;font-family:system-ui;padding-bottom:80px}
+.header{text-align:center;padding:20px;border-bottom:1px solid #333}
+.header h1{color:#d4af37;font-size:24px}
+.header p{color:#999;font-size:14px;margin-top:5px}
+.card{background:#1a1a1a;border:2px solid #d4af37;border-radius:16px;padding:20px;margin:20px}
+.card h2{color:#d4af37;margin-bottom:10px}
+audio{width:100%;margin:15px 0}
+.btn{background:#d4af37;color:#000;border:none;padding:15px 40px;border-radius:50px;font-size:18px;font-weight:900;width:100%}
+.nav{position:fixed;bottom:0;left:0;right:0;background:#1a1a1a;border-top:1px solid #333;display:flex;justify-content:space-around;padding:10px 0}
+.nav-item{text-align:center;font-size:12px;color:#999}
+.nav-item.active{color:#d4af37}
+.tab{display:none;padding:20px}
+.tab.active{display:block}
+</style>
+</head>
+<body>
+<div class="header">
+<h1>🏰 Kingdom of Ar-Rahman</h1>
+<p>No sects. No footnotes. Just Truth.</p>
+</div>
+
+<div id="fajr" class="tab">
+<div class="card">
+<h2>Fajr Mode</h2>
+<p>The 3% wake different</p>
+</div>
+</div>
+
+<div id="pesta" class="tab active">
+<div class="card">
+<h2>🔥 PESTA PENANG 🔥</h2>
+<p>"Ayo jok Pulau Pinang Kole. Pesta."</p>
+<audio controls id="anthem">
+<source src="./penang-anthem.mp3" type="audio/mpeg">
+Your browser doesn't support audio.
+</audio>
+<br>
+<button class="btn" onclick="document.getElementById('anthem').play()">PESTAAAA!!!</button>
+</div>
+</div>
+
+<div class="nav">
+<div class="nav-item" onclick="showTab('fajr')">Fajr</div>
+<div class="nav-item active" onclick="showTab('pesta')">Pesta</div>
+<div class="nav-item">Solar</div>
+<div class="nav-item">Ledger</div>
+<div class="nav-item">Scrolls</div>
+</div>
+
+<script>
+function showTab(tab) {
+document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+document.getElementById(tab).classList.add('active');
+event.target.classList.add('active');
+}
+</script>
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kingdom of Ar-Rahman</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0a0a0a;color:#fff;font-family:system-ui;padding-bottom:80px}
+.header{text-align:center;padding:20px;border-bottom:1px solid #333}
+.header h1{color:#d4af37;font-size:24px}
+.header p{color:#999;font-size:14px;margin-top:5px}
+.card{background:#1a1a1a;border:2px solid #d4af37;border-radius:16px;padding:20px;margin:20px}
+.card h2{color:#d4af37;margin-bottom:10px}
+audio{width:100%;margin:15px 0}
+.btn{background:#d4af37;color:#000;border:none;padding:15px 40px;border-radius:50px;font-size:18px;font-weight:900;width:100%}
+.nav{position:fixed;bottom:0;left:0;right:0;background:#1a1a1a;border-top:1px solid #333;display:flex;justify-content:space-around;padding:10px 0}
+.nav-item{text-align:center;font-size:12px;color:#999}
+.nav-item.active{color:#d4af37}
+.tab{display:none;padding:20px}
+.tab.active{display:block}
+</style>
+</head>
+<body>
+<div class="header">
+<h1>🏰 Kingdom of Ar-Rahman</h1>
+<p>No sects. No footnotes. Just Truth.</p>
+</div>
+
+<div id="fajr" class="tab">
+<div class="card">
+<h2>Fajr Mode</h2>
+<p>The 3% wake different</p>
+</div>
+</div>
+
+<div id="pesta" class="tab active">
+<div class="card">
+<h2>🔥 PESTA PENANG 🔥</h2>
+<p>"Ayo jok Pulau Pinang Kole. Pesta."</p>
+<audio controls id="anthem">
+<source src="./penang-anthem.mp3" type="audio/mpeg">
+Your browser doesn't support audio.
+</audio>
+<br>
+<button class="btn" onclick="document.getElementById('anthem').play()">PESTAAAA!!!</button>
+</div>
+</div>
+
+<div class="nav">
+<div class="nav-item" onclick="showTab('fajr')">Fajr</div>
+<div class="nav-item active" onclick="showTab('pesta')">Pesta</div>
+<div class="nav-item">Solar</div>
+<div class="nav-item">Ledger</div>
+<div class="nav-item">Scrolls</div>
+</div>
+
+<script>
+function showTab(tab) {
+document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+document.getElementById(tab).classList.add('active');
+event.target.classList.add('active');
+}
+</script>
+</body>
+</html>
